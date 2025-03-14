@@ -15,14 +15,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
-      - name: Using Node.js 23.x
-        uses: actions/setup-node@v4
-        with:
-          node-version: 23.x
-      - name: Installing dependencies
-        run: npm ci
-      - name: Generating coverage information 
-        run: npm run coverage
       - name: SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@v5
         env:
