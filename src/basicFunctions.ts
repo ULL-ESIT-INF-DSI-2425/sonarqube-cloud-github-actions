@@ -40,3 +40,16 @@ export function div(firstNumber: number, secondNumber: number): number {
   }
   return firstNumber / secondNumber;
 }
+
+/**
+ *
+ * @param firstNumber - Consists of the first operand of the multiplication
+ * @param secondNumber - Consists of the second operand of the multiplication 
+ * @returns The multiplication of the two numbers `firstNumber` and `secondNumber`
+ * ```typescript
+ * mult(5, 6) = 30
+ * ```
+ */
+export function mult(firstNumber: number, secondNumber: number): number {
+  return firstNumber * secondNumber;
+}
